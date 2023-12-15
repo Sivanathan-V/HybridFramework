@@ -1,0 +1,17 @@
+package com.qa.pages.API.output_pojo.booking_output_pojo;
+
+import lombok.Data;
+import com.qa.pages.API.API_BasePage;
+
+
+@Data
+public class Bookingdates extends API_BasePage {
+    private String checkin;
+    private String checkout;
+
+    public Bookingdates(String checkin, String checkout) {
+        super();
+        this.checkin = checkin;
+        this.checkout = checkout;
+    }
+}
